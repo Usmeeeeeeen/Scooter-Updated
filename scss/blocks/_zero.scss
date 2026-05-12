@@ -1,0 +1,272 @@
+.zero {
+  margin-top: 200px;
+  position: relative;
+  z-index: 2;
+  &::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 361px;
+    height: 151px;
+    top: 80px;
+    right: 0;
+    background-image: url("../../icons/zero__vector.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &::before {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 95px;
+    height: 445px;
+    top: 0;
+    right: 0;
+    background-image: url("../../icons/easy__mask.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__container {
+    @include df-row-between-center;
+  }
+  &__left-box {
+    @include df-column-center-start;
+    gap: 40px;
+  }
+  &__title {
+    width: 445px;
+    text-align: start;
+    font-family: "Space Mono";
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14px;
+    color: $dark__navy;
+  }
+  &__text {
+    width: 445px;
+    text-align: start;
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: $dim__grey;
+  }
+  &__button {
+    @include template__button;
+  }
+  &__image {
+    border-radius: 50%;
+    width: 445px;
+    height: 445px;
+  }
+}
+@media (max-width: 1100px) {
+  .zero {
+    margin-top: 120px;
+    position: relative;
+    z-index: 2;
+    &::after {
+      position: absolute;
+      content: "";
+      display: inline-block;
+      width: 355px;
+      height: 151px;
+      top: 75px;
+      right: 0;
+      background-image: url("../../icons/zero__tb-vector.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &::before {
+      z-index: -1;
+      position: absolute;
+      content: "";
+      display: inline-block;
+      width: 95px;
+      height: 445px;
+      top: 0;
+      right: 0;
+      background-image: url("../../icons/easy__mask.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &__container {
+      @include df-column-reverse-center-center;
+      gap: 64px;
+    }
+    &__left-box {
+      @include df-column-center-center;
+      gap: 40px;
+    }
+    &__title {
+      text-align: center;
+      width: 457px;
+      font-family: "Space Mono";
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 48px;
+      letter-spacing: -2.14px;
+      color: $dark__navy;
+    }
+    &__text {
+      width: 573px;
+      text-align: center;
+      font-family: "Lexend Deca";
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: 0px;
+      color: $dim__grey;
+    }
+    &__button {
+      @include template__button;
+    }
+    &__image {
+      border-radius: 50%;
+      width: 445px;
+      height: 445px;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .zero {
+    margin-top: 120px;
+    position: relative;
+    z-index: 2;
+    &::after {
+      position: absolute;
+      content: "";
+      display: inline-block;
+      width: 355px;
+      height: 151px;
+      top: 75px;
+      right: 0;
+      background-image: url("../../icons/zero__tb-vector.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &::before {
+      z-index: -1;
+      position: absolute;
+      content: "";
+      display: inline-block;
+      width: 95px;
+      height: 445px;
+      top: 0;
+      right: 0;
+      background-image: url("../../icons/easy__mask.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &__container {
+      padding-left: 40px;
+      padding-right: 40px;
+      @include df-column-reverse-center-center;
+      gap: 64px;
+    }
+    &__left-box {
+      @include df-column-center-center;
+      gap: 40px;
+    }
+    &__title {
+      text-align: center;
+      width: 457px;
+      font-family: "Space Mono";
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 48px;
+      letter-spacing: -2.14px;
+      color: $dark__navy;
+    }
+    &__text {
+      width: 573px;
+      text-align: center;
+      font-family: "Lexend Deca";
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: 0px;
+      color: $dim__grey;
+    }
+    &__button {
+      @include template__button;
+    }
+    &__image {
+      border-radius: 50%;
+      width: 445px;
+      height: 445px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .zero {
+    margin-top: 120px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      display: inline-block;
+      width: 219px;
+      height: 151px;
+      top: 0;
+      right: 0;
+      background-image: url("../../icons/zero__mb-vector.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &::before {
+      z-index: -1;
+      position: absolute;
+      content: "";
+      display: none;
+      width: 95px;
+      height: 445px;
+      top: 0;
+      right: 0;
+      background-image: url("../../icons/easy__mask.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &__container {
+      padding-left: 32px;
+      padding-right: 32px;
+      @include df-column-reverse-center-center;
+      gap: 56px;
+    }
+    &__left-box {
+      @include df-column-center-center;
+      gap: 32px;
+    }
+    &__title {
+      text-align: center;
+      width: 311px;
+      font-family: "Space Mono";
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: -1.43px;
+      color: $dark__navy;
+    }
+    &__text {
+      text-align: center;
+      width: 100%;
+      font-family: "Lexend Deca";
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: 0px;
+      color: $dim__grey;
+    }
+    &__button {
+      @include template__button;
+    }
+    &__image {
+      border-radius: 50%;
+      width: 311px;
+      height: 311px;
+    }
+  }
+}

@@ -1,0 +1,474 @@
+.header {
+  box-shadow: rgba(252, 182, 43, 0.854) 0px 5px 15px;
+  z-index: 3332;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  background-color: $white;
+  &__container {
+    @include df-row-between-center;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+  &__test-button {
+    outline: none;
+    border: none;
+    background: none;
+    display: none;
+    opacity: 0;
+  }
+  &__test-button-icon {
+    width: 20px;
+    height: 16px;
+  }
+  &__left-box {
+    @include df-row-center-center;
+    gap: 58.18px;
+  }
+  &__logo-link {
+    transition: 200ms ease all;
+    &:active {
+      transition: 200ms ease all;
+      opacity: 0.5;
+    }
+  }
+  &__logo-image {
+    width: 107.82px;
+    height: 28.56px;
+  }
+  &__list {
+    @include df-row-center-center;
+    gap: 32px;
+  }
+  &__texts {
+    font-family: "Space Mono";
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: $dim__grey;
+  }
+  &__theme {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  &__theme-btn {
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: 2px solid $light__grey;
+    background: transparent;
+    font-family: "Space Mono", monospace;
+    font-size: 12px;
+    cursor: pointer;
+    color: $dark__navy;
+    transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+
+    &[aria-pressed="true"] {
+      background: $yellow;
+      border-color: $yellow;
+      color: $black;
+    }
+
+    &:hover:not([aria-pressed="true"]) {
+      border-color: $yellow;
+    }
+  }
+
+  &__button {
+    @include template__button;
+  }
+  &__mb-buttons-box {
+    display: none;
+  }
+
+  [data-theme="night"] & {
+    background-color: $second__dark-navy;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 18px;
+
+    .header__texts {
+      color: $nearly__grey;
+    }
+
+    .header__theme-btn {
+      border-color: $dim__grey;
+      color: $snow;
+
+      &[aria-pressed="true"] {
+        background: $yellow;
+        border-color: $yellow;
+        color: $black;
+      }
+
+      &:hover:not([aria-pressed="true"]) {
+        border-color: $yellow;
+        color: $snow;
+      }
+    }
+  }
+  &__mb-open-burger-button {
+    outline: none;
+    border: none;
+    background: none;
+    display: none;
+  }
+  &__mb-open-burger-button-icon {
+    width: 20px;
+    height: 16px;
+  }
+  &__mb-close-burger-button {
+    outline: none;
+    border: none;
+    background: none;
+    display: none;
+  }
+  &__mb-close-burger-button-icon {
+    width: 20px;
+    height: 16px;
+  }
+  &__mb-div {
+    display: none;
+    transition: 450ms ease all;
+    z-index: -1;
+    width: 100%;
+    height: 100dvh;
+    top: 68px;
+    position: fixed;
+    transform: translateX(-100%);
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  &__mb-div.active {
+    transform: translateX(0%);
+    transition: 450ms ease all;
+  }
+  &__mb-nav {
+    @include df-column-between-start;
+    background-color: $second__dark-navy;
+    width: 80%;
+    height: 100dvh;
+    padding: 64px 32px 102px 32px;
+  }
+  &__mb-list {
+    @include df-column-start-start;
+    gap: 24px;
+  }
+  &__mb-lists {
+    @include df-column-start-start;
+    gap: 24px;
+  }
+  &__mb-texts {
+    font-family: "Space Mono";
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: $white;
+  }
+  &__mb-button {
+    display: none;
+    @include template__button;
+  }
+}
+@media (max-width: 1024px) {
+  .header {
+    box-shadow: rgba(252, 182, 43, 0.854) 0px 5px 15px;
+    z-index: 1111;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: $white;
+    &__container {
+      @include df-row-between-center;
+      padding-top: 22px;
+      padding-bottom: 22px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    &__test-button {
+      outline: none;
+      border: none;
+      background: none;
+      display: none;
+      opacity: 0;
+    }
+    &__test-button-icon {
+      width: 20px;
+      height: 16px;
+    }
+    &__left-box {
+      @include df-row-center-center;
+      gap: 58.18px;
+    }
+    &__logo-link {
+      transition: 200ms ease all;
+      &:active {
+        transition: 200ms ease all;
+        opacity: 0.5;
+      }
+    }
+    &__logo-image {
+      width: 107.82px;
+      height: 28.56px;
+    }
+    &__list {
+      @include df-row-center-center;
+      gap: 32px;
+    }
+    &__texts {
+      font-family: "Space Mono";
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: 0px;
+      color: $dim__grey;
+    }
+    &__button {
+      @include template__button;
+    }
+    &__mb-buttons-box {
+      display: none;
+    }
+    &__mb-open-burger-button {
+      outline: none;
+      border: none;
+      background: none;
+      display: none;
+    }
+    &__mb-open-burger-button-icon {
+      width: 20px;
+      height: 16px;
+    }
+    &__mb-close-burger-button {
+      outline: none;
+      border: none;
+      background: none;
+      display: none;
+    }
+    &__mb-close-burger-button-icon {
+      width: 20px;
+      height: 16px;
+    }
+    &__mb-div {
+      display: none;
+      transition: 450ms ease all;
+      z-index: -1;
+      width: 100%;
+      height: 100dvh;
+      top: 68px;
+      position: fixed;
+      transform: translateX(-100%);
+      backdrop-filter: blur(5px);
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    &__mb-div.active {
+      transform: translateX(0%);
+      transition: 450ms ease all;
+    }
+    &__mb-nav {
+      @include df-column-between-start;
+      background-color: $second__dark-navy;
+      width: 80%;
+      height: 100dvh;
+      padding: 64px 32px 102px 32px;
+    }
+    &__mb-list {
+      @include df-column-start-start;
+      gap: 24px;
+    }
+    &__mb-lists {
+      @include df-column-start-start;
+      gap: 24px;
+    }
+    &__mb-texts {
+      font-family: "Space Mono";
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: 0px;
+      color: $white;
+    }
+    &__mb-button {
+      display: none;
+      @include template__button;
+    }
+
+    [data-theme="night"] & {
+      background-color: $second__dark-navy;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 18px;
+
+      .header__texts {
+        color: $nearly__grey;
+      }
+
+      .header__theme-btn {
+        border-color: $dim__grey;
+        color: $snow;
+
+        &[aria-pressed="true"] {
+          background: $yellow;
+          border-color: $yellow;
+          color: $black;
+        }
+
+        &:hover:not([aria-pressed="true"]) {
+          border-color: $yellow;
+          color: $snow;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    box-shadow: rgba(252, 182, 43, 0.854) 0px 5px 15px;
+    z-index: 1111;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: $white;
+    &__container {
+      @include df-row-reverse-between-center;
+      padding-top: 22px;
+      padding-bottom: 22px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    &__test-button {
+      outline: none;
+      border: none;
+      background: none;
+      display: block;
+      opacity: 0;
+    }
+    &__test-button-icon {
+      width: 20px;
+      height: 16px;
+    }
+    &__left-box {
+      @include df-row-center-center;
+      gap: 0px;
+    }
+    &__logo-link {
+      transition: 200ms ease all;
+      &:active {
+        transition: 200ms ease all;
+        opacity: 0.5;
+      }
+    }
+    &__logo-image {
+      width: 75.5px;
+      height: 20px;
+    }
+    &__list {
+      display: none;
+    }
+    &__lists {
+      display: none;
+    }
+    &__links {
+      display: none;
+    }
+    &__texts {
+      display: none;
+      font-family: "Space Mono";
+    }
+    &__button {
+      @include template__button;
+      display: none;
+    }
+    &__theme-btn {
+      padding: 6px 10px;
+      font-size: 11px;
+    }
+    &__mb-buttons-box {
+      display: block;
+    }
+    &__mb-open-burger-button {
+      outline: none;
+      border: none;
+      background: none;
+      display: block;
+    }
+    &__mb-open-burger-button-icon {
+      width: 20px;
+      height: 16px;
+    }
+    &__mb-close-burger-button {
+      outline: none;
+      border: none;
+      background: none;
+      display: none;
+    }
+    &__mb-close-burger-button-icon {
+      width: 20px;
+      height: 16px;
+    }
+    &__mb-div {
+      display: block;
+      transition: 450ms ease all;
+      z-index: 10;
+      width: 100%;
+      height: 100dvh;
+      top: 68px;
+      position: fixed;
+      transform: translateX(-100%);
+      backdrop-filter: blur(5px);
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    &__mb-div.active {
+      transform: translateX(0%);
+      transition: 450ms ease all;
+    }
+    &__mb-nav {
+      @include df-column-between-start;
+      background-color: $second__dark-navy;
+      width: 80%;
+      height: 100dvh;
+      padding: 64px 32px 102px 32px;
+    }
+    &__mb-list {
+      @include df-column-start-start;
+      gap: 24px;
+    }
+    &__mb-lists {
+      @include df-column-start-start;
+      gap: 24px;
+    }
+    &__mb-texts {
+      font-family: "Space Mono";
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: 0px;
+      color: $white;
+    }
+    &__mb-button {
+      display: block;
+      @include template__button;
+    }
+
+    [data-theme="night"] & {
+      background-color: $second__dark-navy;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 18px;
+
+      .header__theme-btn {
+        border-color: $dim__grey;
+        color: $snow;
+
+        &[aria-pressed="true"] {
+          background: $yellow;
+          border-color: $yellow;
+          color: $black;
+        }
+
+        &:hover:not([aria-pressed="true"]) {
+          border-color: $yellow;
+          color: $snow;
+        }
+      }
+    }
+  }
+}

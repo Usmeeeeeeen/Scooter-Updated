@@ -1,0 +1,201 @@
+.join {
+  margin-top: 120px;
+  &__container {
+    @include df-column-center-center;
+    gap: 103px;
+  }
+  &__title {
+    font-family: "Space Mono";
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14px;
+    color: $dark__navy;
+  }
+  &__box {
+    width: 100%;
+    @include df-row-between-start;
+  }
+  &__boxes {
+    @include df-column-center-center;
+  }
+  &__images {
+    width: 240px;
+    height: 295px;
+    margin-bottom: 32px;
+  }
+  &__titles {
+    text-align: center;
+    font-family: "Space Mono";
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07px;
+    color: $dark__navy;
+    margin-bottom: 27px;
+  }
+  &__texts {
+    width: 350px;
+    text-align: center;
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: $dim__grey;
+  }
+}
+@media (max-width: 1200px) {
+  .join {
+    margin-top: 120px;
+    &__container {
+      @include df-column-center-center;
+      gap: 105px;
+    }
+    &__title {
+      font-family: "Space Mono";
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 48px;
+      letter-spacing: -2.14px;
+      color: $dark__navy;
+    }
+    &__box {
+      width: auto;
+      @include df-column-center-center;
+      gap: 55px;
+    }
+    &__boxes {
+      @include df-column-center-center;
+    }
+    &__images {
+      width: 240px;
+      height: 295px;
+      margin-bottom: 32px;
+    }
+    &__titles {
+      text-align: center;
+      font-family: "Space Mono";
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -1.07px;
+      color: $dark__navy;
+      margin-bottom: 27px;
+    }
+    &__texts {
+      width: 457px;
+      text-align: center;
+      font-family: "Lexend Deca";
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: 0px;
+      color: $dim__grey;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .join {
+    margin-top: 120px;
+    &__container {
+      padding-left: 40px;
+      padding-right: 40px;
+      @include df-column-center-center;
+      gap: 105px;
+    }
+    &__title {
+      font-family: "Space Mono";
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 48px;
+      letter-spacing: -2.14px;
+      color: $dark__navy;
+    }
+    &__box {
+      width: auto;
+      @include df-column-center-center;
+      gap: 55px;
+    }
+    &__boxes {
+      @include df-column-center-center;
+    }
+    &__images {
+      width: 240px;
+      height: 295px;
+      margin-bottom: 32px;
+    }
+    &__titles {
+      text-align: center;
+      font-family: "Space Mono";
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -1.07px;
+      color: $dark__navy;
+      margin-bottom: 27px;
+    }
+    &__texts {
+      width: 457px;
+      text-align: center;
+      font-family: "Lexend Deca";
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: 0px;
+      color: $dim__grey;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .join {
+    margin-top: 120px;
+    &__container {
+      padding-left: 32px;
+      padding-right: 32px;
+      @include df-column-center-center;
+      gap: 64px;
+    }
+    &__title {
+      font-family: "Space Mono";
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: -1.43px;
+      color: $dark__navy;
+    }
+    &__box {
+      width: auto;
+      @include df-column-center-center;
+      gap: 56px;
+    }
+    &__boxes {
+      @include df-column-center-center;
+    }
+    &__images {
+      width: 240px;
+      height: 288px;
+      margin-bottom: 16px;
+    }
+    &__titles {
+      text-align: center;
+      font-family: "Space Mono";
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -1.07px;
+      color: $dark__navy;
+      margin-bottom: 27px;
+    }
+    &__texts {
+      width: 100%;
+      text-align: center;
+      font-family: "Lexend Deca";
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: 0px;
+      color: $dim__grey;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@mixin template__button {
+  padding: 14px 39px;
+  @include df-row-center-center;
+  background-color: $yellow;
+  font-family: "Space Mono";
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: $white;
+  transition: 200ms ease all;
+  border: 2px solid $yellow;
+  cursor: pointer;
+  &:active {
+    border: 2px solid $yellow;
+    background-color: inherit;
+    color: $yellow;
+  }
+}

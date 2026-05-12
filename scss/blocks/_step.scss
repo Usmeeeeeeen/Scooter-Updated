@@ -1,0 +1,341 @@
+.step {
+  z-index: 2;
+  position: relative;
+  padding-top: 160px;
+  &::after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    top: 205px;
+    left: -50px;
+    width: 973px;
+    height: 15px;
+    background-image: url("../../icons/step__path.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__container {
+    @include df-row-between-start;
+    gap: 0px;
+  }
+  &__boxes {
+    width: 100%;
+    @include df-column-center-start;
+    gap: 40px;
+  }
+  &__icons {
+    width: 96px;
+    height: 96px;
+  }
+  &__mini-boxes {
+    @include df-column-center-start;
+    gap: 27px;
+  }
+  &__titles {
+    text-align: start;
+    font-family: "Space Mono";
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07px;
+    color: $dark__navy;
+  }
+  &__texts {
+    width: 300px;
+    text-align: start;
+    font-family: "Lexend Deca";
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: $dim__grey;
+  }
+}
+@media (max-width: 1100px) {
+  .step {
+    z-index: 2;
+    position: relative;
+    padding-top: 160px;
+    &::after {
+      z-index: -1;
+      position: absolute;
+      content: "";
+      display: none;
+      top: 205px;
+      left: -50px;
+      width: 973px;
+      height: 15px;
+      background-image: url("../../icons/step__path.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &__container {
+      @include df-column-center-center;
+      gap: 40px;
+    }
+    &__boxes {
+      width: 100%;
+      @include df-row-evenly-start;
+      gap: 0;
+    }
+    &__icons {
+      width: 96px;
+      height: 96px;
+    }
+    &__mini-boxes {
+      @include df-column-center-start;
+      gap: 27px;
+    }
+    &__titles {
+      text-align: start;
+      font-family: "Space Mono";
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -1.07px;
+      color: $dark__navy;
+    }
+    &__texts {
+      width: 300px;
+      text-align: start;
+      font-family: "Lexend Deca";
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: 0px;
+      color: $dim__grey;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .step {
+    z-index: 2;
+    position: relative;
+    padding-top: 122px;
+    &::after {
+      z-index: -1;
+      position: absolute;
+      content: "";
+      display: inline-block;
+      top: 0;
+      left: 145px;
+      width: 15px;
+      height: 512px;
+      background-image: url("../../icons/step__tb-path.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &__container {
+      @include df-column-center-center;
+      padding-left: 40px;
+      padding-right: 40px;
+      gap: 40px;
+    }
+    &__boxes {
+      width: 100%;
+      @include df-row-evenly-start;
+      gap: 0;
+    }
+    &__icons {
+      width: 96px;
+      height: 96px;
+    }
+    &__mini-boxes {
+      @include df-column-center-start;
+      gap: 27px;
+    }
+    &__titles {
+      text-align: start;
+      font-family: "Space Mono";
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -1.07px;
+      color: $dark__navy;
+    }
+    &__texts {
+      width: 398px;
+      text-align: start;
+      font-family: "Lexend Deca";
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: 0px;
+      color: $dim__grey;
+    }
+  }
+}
+@media (max-width: 820px) {
+  .step {
+    z-index: 2;
+    padding-top: 122px;
+    position: relative;
+    &::after {
+      z-index: -1;
+      position: absolute;
+      content: "";
+      display: inline-block;
+      top: 0;
+      left: 162.5px;
+      width: 15px;
+      height: 512px;
+      background-image: url("../../icons/step__tb-path.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &__container {
+      @include df-column-center-center;
+      padding-left: 40px;
+      padding-right: 40px;
+      gap: 40px;
+    }
+    &__boxes {
+      width: 100%;
+      @include df-row-evenly-start;
+      gap: 0;
+    }
+    &__icons {
+      width: 96px;
+      height: 96px;
+    }
+    &__mini-boxes {
+      @include df-column-center-start;
+      gap: 27px;
+    }
+    &__titles {
+      text-align: start;
+      font-family: "Space Mono";
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -1.07px;
+      color: $dark__navy;
+    }
+    &__texts {
+      width: 398px;
+      text-align: start;
+      font-family: "Lexend Deca";
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: 0px;
+      color: $dim__grey;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .step {
+    z-index: 2;
+    position: relative;
+    padding-top: 122px;
+    &::after {
+      z-index: -1;
+      position: absolute;
+      content: "";
+      display: inline-block;
+      top: 0;
+      left: 145px;
+      width: 15px;
+      height: 512px;
+      background-image: url("../../icons/step__tb-path.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &__container {
+      @include df-column-center-center;
+      padding-left: 40px;
+      padding-right: 40px;
+      gap: 40px;
+    }
+    &__boxes {
+      width: 100%;
+      @include df-row-evenly-start;
+      gap: 0;
+    }
+    &__icons {
+      width: 96px;
+      height: 96px;
+    }
+    &__mini-boxes {
+      @include df-column-center-start;
+      gap: 27px;
+    }
+    &__titles {
+      text-align: start;
+      font-family: "Space Mono";
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -1.07px;
+      color: $dark__navy;
+    }
+    &__texts {
+      width: 398px;
+      text-align: start;
+      font-family: "Lexend Deca";
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: 0px;
+      color: $dim__grey;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .step {
+    padding-top: 120px;
+    z-index: 2;
+    position: relative;
+    &::after {
+      z-index: -1;
+      position: absolute;
+      content: "";
+      display: none;
+      top: 0;
+      left: 145px;
+      width: 15px;
+      height: 512px;
+      background-image: url("../../icons/step__tb-path.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &__container {
+      @include df-column-center-center;
+      padding-left: 32px;
+      padding-right: 32px;
+      gap: 48px;
+    }
+    &__boxes {
+      @include df-column-center-center;
+      gap: 24px;
+    }
+    &__icons {
+      width: 56px;
+      height: 56px;
+    }
+    &__mini-boxes {
+      @include df-column-center-center;
+      gap: 24px;
+    }
+    &__titles {
+      text-align: center;
+      font-family: "Space Mono";
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: -0.89px;
+      color: $dark__navy;
+    }
+    &__texts {
+      width: 100%;
+      text-align: center;
+      font-family: "Lexend Deca";
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: 0px;
+      color: $dim__grey;
+    }
+  }
+}

@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var _t = localStorage.getItem("site-theme");
+        if (_t === "night" || _t === "day") document.documentElement.dataset.theme = _t;
+      } catch (e) {}
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="favicon/png" />
+    <!-- CDNJS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <title>Location-page</title>
+  </head>
+  <body>
+    <h1 class="visually-hidden">Simple-starter</h1>
+    <header class="header">
+      <div class="container header__container">
+        <button class="header__test-button">
+          <img
+            class="header__test-button-icon"
+            src="./icons/open__burger.svg"
+            alt="open__burger-icon"
+          />
+        </button>
+        <div class="header__left-box">
+          <a class="header__logo-link" href="./index.html">
+            <img
+              class="header__logo-image"
+              src="./icons/dark__logo.svg"
+              alt="dark__logo-icon"
+            />
+          </a>
+          <ul class="header__list">
+            <li class="header__lists">
+              <a class="header__links" href="./about.html">
+                <p class="header__texts">About</p>
+              </a>
+            </li>
+            <li class="header__lists">
+              <a class="header__links" href="#">
+                <p class="header__texts online">Location</p>
+              </a>
+            </li>
+            <li class="header__lists">
+              <a class="header__links" href="./careers.html">
+                <p class="header__texts">Careers</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__theme" role="group" aria-label="Color theme">
+          <button type="button" class="header__theme-btn header__theme-btn--day" aria-pressed="true">Day</button>
+          <button type="button" class="header__theme-btn header__theme-btn--night" aria-pressed="false">Night</button>
+        </div>
+        <button class="header__button">Get Scootin</button>
+        <div class="header__mb-buttons-box">
+          <button class="header__mb-open-burger-button">
+            <img
+              class="header__mb-open-burger-button-icon"
+              src="./icons/open__burger.svg"
+              alt="open__burger-icon"
+            />
+          </button>
+          <button class="header__mb-close-burger-button">
+            <img
+              class="header__mb-close-burger-button-icon"
+              src="./icons/close__burger.svg"
+              alt="close__burger-icon"
+            />
+          </button>
+        </div>
+      </div>
+      <div class="header__mb-div">
+        <nav class="header__mb-nav">
+          <ul class="header__mb-list">
+            <li class="header__mb-lists">
+              <a class="header__mb-links" href="./about.html">
+                <p class="header__mb-texts">About</p>
+              </a>
+            </li>
+            <li class="header__mb-lists">
+              <a class="header__mb-links" href="#">
+                <p class="header__mb-texts online">Location</p>
+              </a>
+            </li>
+            <li class="header__mb-lists">
+              <a class="header__mb-links" href="./careers.html">
+                <p class="header__mb-texts">Careers</p>
+              </a>
+            </li>
+          </ul>
+          <button class="header__mb-button">Get Scootin</button>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="locations">
+        <div class="container locations__container">
+          <h2 class="locations__title">Locations</h2>
+        </div>
+      </section>
+      <section class="map">
+        <div class="container map__container">
+          <img class="map__image" src="./icons/map__image.svg" alt="map" />
+          <img
+            class="map__tb-image"
+            src="./icons/map__tb-image.svg"
+            alt="map"
+          />
+          <img
+            class="map__mb-image"
+            src="./icons/map__mb-image.svg"
+            alt="map"
+          />
+          <div class="map__item-box">
+            <p class="map__item-texts">New York</p>
+            <p class="map__item-texts">London</p>
+            <p class="map__item-texts">Jakarta</p>
+            <p class="map__item-texts">Yokohama</p>
+          </div>
+        </div>
+      </section>
+      <section class="list">
+        <div class="container list__container">
+          <h2 class="list__title">Your City Not Listed?</h2>
+          <p class="list__text">
+            If you’d like to see Scoot in your hometown, be sure to let us know.
+            We track requests and plan launches based on demand. Feel free to
+            message us by clicking the link or messaging us on social.
+          </p>
+          <button class="list__button">Message Us</button>
+        </div>
+      </section>
+      <section class="sign">
+        <div class="container sign__container">
+          <h2 class="sign__title">Sign up and Scoot off today</h2>
+          <div class="sign__right-box">
+            <a
+              class="sign__icon-link"
+              href="https://www.apple.com/app-store/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="sign__icon-image"
+                src="./icons/appstore.svg"
+                alt="appstore"
+              />
+            </a>
+            <a
+              class="sign__icon-link"
+              href="https://play.google.com/store/games?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="sign__icon-image"
+                src="./icons/googleplay.svg"
+                alt="googleplay"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__left-box">
+          <a class="footer__logo-link" href="./index.html">
+            <img
+              class="footer__logo-image"
+              src="./icons/white__logo.svg"
+              alt="white__logo"
+            />
+          </a>
+          <ul class="footer__list">
+            <li class="footer__lists">
+              <a class="footer__links" href="./about.html">
+                <p class="footer__links-texts">About</p>
+              </a>
+            </li>
+            <li class="footer__lists">
+              <a class="footer__links" href="#">
+                <p class="footer__links-texts online">Location</p>
+              </a>
+            </li>
+            <li class="footer__lists">
+              <a class="footer__links" href="./careers.html">
+                <p class="footer__links-texts">Careers</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__right-icon-box">
+          <a
+            class="footer__icon-link"
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              class="footer__icon-image"
+              src="./icons/facebook.svg"
+              alt="facebook"
+            />
+          </a>
+          <a
+            class="footer__icon-link"
+            href="https://x.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              class="footer__icon-image"
+              src="./icons/twitter.svg"
+              alt="twitter"
+            />
+          </a>
+          <a
+            class="footer__icon-link"
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              class="footer__icon-image"
+              src="./icons/instagram.svg"
+              alt="instagram"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>

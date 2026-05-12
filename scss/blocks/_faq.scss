@@ -1,0 +1,293 @@
+.faq {
+  margin-top: 120px;
+  &__container {
+    @include df-column-center-center;
+    gap: 64px;
+  }
+  &__title {
+    font-family: "Space Mono";
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14px;
+    color: $dark__navy;
+  }
+  &__bottom-box {
+    width: 100%;
+    @include df-column-center-center;
+    gap: 64px;
+  }
+  &__bottom-boxes {
+    width: 100%;
+    @include df-row-between-start;
+  }
+  &__bottom-title {
+    width: 100%;
+    font-family: "Space Mono";
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1.79px;
+    color: $dark__navy;
+  }
+  &__mini-bottom-box {
+    width: 100%;
+    @include df-column-center-center;
+    gap: 24px;
+  }
+  &__mini-bottom-boxes {
+    cursor: pointer;
+    width: 730px;
+    padding: 32px 40px 32px 40px;
+    background-color: $nearly__grey;
+    @include df-column-center-center;
+    gap: 0px;
+  }
+  &__mini-bottom-boxes.active {
+    width: 730px;
+    padding: 32px 40px 32px 40px;
+    background-color: $nearly__grey;
+    @include df-column-center-center;
+    gap: 24px;
+  }
+  &__mini-bottom-top-box {
+    width: 100%;
+    @include df-row-between-center;
+  }
+  &__bottom-titles {
+    width: 100%;
+    text-align: start;
+    font-family: "Space Mono";
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07px;
+    color: $dark__navy;
+  }
+  &__bottom-icons {
+    width: 18px;
+    height: 12px;
+    transition: 350ms ease all;
+  }
+  &__bottom-icons.active {
+    width: 18px;
+    height: 12px;
+    transition: 350ms ease all;
+    transform: rotate(180deg);
+  }
+  &__texts {
+    overflow: hidden;
+    width: 100%;
+    text-align: start;
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 0px;
+    letter-spacing: 0px;
+    color: $dark__navy;
+    transition: 350ms ease all;
+  }
+  &__texts.active {
+    overflow: visible;
+    transition: 350ms ease all;
+    line-height: 25px;
+  }
+}
+@media (max-width: 1024px) {
+  .faq {
+    margin-top: 120px;
+    &__container {
+      width: 100%;
+      padding-right: 40px;
+      padding-left: 40px;
+      @include df-column-center-center;
+      gap: 64px;
+    }
+    &__title {
+      font-family: "Space Mono";
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 48px;
+      letter-spacing: -2.14px;
+      color: $dark__navy;
+    }
+    &__bottom-box {
+      width: 100%;
+      @include df-column-center-center;
+      gap: 64px;
+    }
+    &__bottom-boxes {
+      width: 100%;
+      @include df-column-center-center;
+      gap: 32px;
+    }
+    &__bottom-title {
+      font-family: "Space Mono";
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: -1.79px;
+      color: $dark__navy;
+    }
+    &__mini-bottom-box {
+      width: 100%;
+      @include df-column-center-center;
+      gap: 24px;
+    }
+    &__mini-bottom-boxes {
+      width: 100%;
+      padding: 32px 40px 32px 40px;
+      background-color: $nearly__grey;
+      @include df-column-center-center;
+      gap: 0px;
+    }
+    &__mini-bottom-boxes.active {
+      width: 100%;
+      padding: 32px 40px 32px 40px;
+      background-color: $nearly__grey;
+      @include df-column-center-center;
+      gap: 24px;
+    }
+    &__mini-bottom-top-box {
+      width: 100%;
+      @include df-row-between-center;
+    }
+    &__bottom-titles {
+      width: 100%;
+      text-align: start;
+      font-family: "Space Mono";
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -1.07px;
+      color: $dark__navy;
+    }
+    &__bottom-icons {
+      width: 18px;
+      height: 12px;
+      transition: 350ms ease all;
+    }
+    &__bottom-icons.active {
+      width: 18px;
+      height: 12px;
+      transition: 350ms ease all;
+      transform: rotate(180deg);
+    }
+    &__texts {
+      overflow: hidden;
+      width: 100%;
+      text-align: start;
+      font-family: "Lexend Deca";
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 0px;
+      letter-spacing: 0px;
+      color: $dark__navy;
+      transition: 350ms ease all;
+    }
+    &__texts.active {
+      overflow: visible;
+      transition: 350ms ease all;
+      line-height: 25px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .faq {
+    margin-top: 145px;
+    &__container {
+      width: 100%;
+      padding-right: 32px;
+      padding-left: 32px;
+      @include df-column-center-center;
+      gap: 48px;
+    }
+    &__title {
+      font-family: "Space Mono";
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: -1.43px;
+      color: $dark__navy;
+    }
+    &__bottom-box {
+      width: 100%;
+      @include df-column-center-center;
+      gap: 48px;
+    }
+    &__bottom-boxes {
+      width: 100%;
+      @include df-column-center-center;
+      gap: 32px;
+    }
+    &__bottom-title {
+      font-family: "Space Mono";
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -1.07px;
+      color: $dark__navy;
+    }
+    &__mini-bottom-box {
+      width: 100%;
+      @include df-column-center-center;
+      gap: 16px;
+    }
+    &__mini-bottom-boxes {
+      width: 100%;
+      padding: 32px 32px 32px 32px;
+      background-color: $nearly__grey;
+      @include df-column-center-center;
+      gap: 0px;
+    }
+    &__mini-bottom-boxes.active {
+      width: 100%;
+      padding: 32px 32px 32px 32px;
+      background-color: $nearly__grey;
+      @include df-column-center-center;
+      gap: 24px;
+    }
+    &__mini-bottom-top-box {
+      width: 100%;
+      @include df-row-between-center;
+    }
+    &__bottom-titles {
+      width: 200px;
+      text-align: start;
+      font-family: "Space Mono";
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: -0.8px;
+      color: $dark__navy;
+    }
+    &__bottom-icons {
+      width: 18px;
+      height: 12px;
+      transition: 350ms ease all;
+    }
+    &__bottom-icons.active {
+      width: 18px;
+      height: 12px;
+      transition: 350ms ease all;
+      transform: rotate(180deg);
+    }
+    &__texts {
+      overflow: hidden;
+      width: 100%;
+      text-align: start;
+      font-family: "Lexend Deca";
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 0px;
+      letter-spacing: 0px;
+      color: $dark__navy;
+      transition: 350ms ease all;
+    }
+    &__texts.active {
+      overflow: visible;
+      transition: 350ms ease all;
+      line-height: 25px;
+    }
+  }
+}

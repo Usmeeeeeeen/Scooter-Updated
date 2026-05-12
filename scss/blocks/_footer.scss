@@ -1,0 +1,160 @@
+.footer {
+  background-color: $second__dark-navy;
+  &__container {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    @include df-row-between-center;
+  }
+  &__left-box {
+    @include df-row-center-center;
+    gap: 58.18px;
+  }
+  &__logo-link {
+    transition: 200ms ease all;
+    &:active {
+      transition: 200ms ease all;
+      opacity: 0.5;
+    }
+  }
+  &__logo-image {
+    width: 107.82px;
+    height: 28.56px;
+  }
+  &__list {
+    @include df-row-center-center;
+    gap: 32px;
+  }
+  &__links-texts {
+    font-family: "Space Mono";
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: $dim__grey;
+  }
+  &__right-icon-box {
+    @include df-row-center-center;
+    gap: 24px;
+  }
+  &__icon-link {
+    transition: 450ms ease all;
+    &:hover {
+      transform: translate(3px, -3px);
+      transition: 450ms ease all;
+      opacity: 0.5;
+    }
+  }
+  &__icon-image {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media (max-width: 1024px) {
+  .footer {
+    background-color: $second__dark-navy;
+    &__container {
+      padding-top: 35px;
+      padding-bottom: 35px;
+      padding-left: 40px;
+      padding-right: 40px;
+      @include df-row-between-center;
+    }
+    &__left-box {
+      @include df-row-center-center;
+      gap: 58.18px;
+    }
+    &__logo-link {
+      transition: 200ms ease all;
+      &:active {
+        transition: 200ms ease all;
+        opacity: 0.5;
+      }
+    }
+    &__logo-image {
+      width: 107.82px;
+      height: 28.56px;
+    }
+    &__list {
+      @include df-row-center-center;
+      gap: 32px;
+    }
+    &__links-texts {
+      font-family: "Space Mono";
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: 0px;
+      color: $dim__grey;
+    }
+    &__right-icon-box {
+      @include df-row-center-center;
+      gap: 24px;
+    }
+    &__icon-link {
+      transition: 200ms ease all;
+      &:active {
+        transition: 200ms ease all;
+        opacity: 0.5;
+      }
+    }
+    &__icon-image {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .footer {
+    background-color: $second__dark-navy;
+    &__container {
+      padding-top: 64px;
+      padding-bottom: 88px;
+      padding-left: 32px;
+      padding-right: 32px;
+      @include df-column-center-center;
+      gap: 85px;
+    }
+    &__left-box {
+      @include df-column-center-center;
+      gap: 41.44px;
+    }
+    &__logo-link {
+      transition: 200ms ease all;
+      &:active {
+        transition: 200ms ease all;
+        opacity: 0.5;
+      }
+    }
+    &__logo-image {
+      width: 75.5px;
+      height: 20px;
+    }
+    &__list {
+      @include df-column-center-center;
+      gap: 16px;
+    }
+    &__links-texts {
+      font-family: "Space Mono";
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: 0px;
+      color: $dim__grey;
+    }
+    &__right-icon-box {
+      @include df-row-center-center;
+      gap: 24px;
+    }
+    &__icon-link {
+      transition: 200ms ease all;
+      &:active {
+        transition: 200ms ease all;
+        opacity: 0.5;
+      }
+    }
+    &__icon-image {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

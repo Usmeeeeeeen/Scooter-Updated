@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    try {
+      var _t = localStorage.getItem("site-theme");
+      if (_t === "night" || _t === "day") document.documentElement.dataset.theme = _t;
+    } catch (e) {}
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="./images/favicon.png" type="favicon/png" />
+  <!-- CDNJS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./scss/main.css" />
+  <title>About-page</title>
+</head>
+
+<body>
+  <h1 class="visually-hidden">Simple-starter</h1>
+  <header class="header">
+    <div class="container header__container">
+      <button class="header__test-button">
+        <img class="header__test-button-icon" src="./icons/open__burger.svg" alt="open__burger-icon" />
+      </button>
+      <div class="header__left-box">
+        <a class="header__logo-link" href="./index.html">
+          <img class="header__logo-image" src="./icons/dark__logo.svg" alt="dark__logo-icon" />
+        </a>
+        <ul class="header__list">
+          <li class="header__lists">
+            <a class="header__links" href="#">
+              <p class="header__texts online">About</p>
+            </a>
+          </li>
+          <li class="header__lists">
+            <a class="header__links" href="./location.html">
+              <p class="header__texts">Location</p>
+            </a>
+          </li>
+          <li class="header__lists">
+            <a class="header__links" href="./careers.html">
+              <p class="header__texts">Careers</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__theme" role="group" aria-label="Color theme">
+        <button type="button" class="header__theme-btn header__theme-btn--day" aria-pressed="true">Day</button>
+        <button type="button" class="header__theme-btn header__theme-btn--night" aria-pressed="false">Night</button>
+      </div>
+      <button class="header__button">Get Scootin</button>
+      <div class="header__mb-buttons-box">
+        <button class="header__mb-open-burger-button">
+          <img class="header__mb-open-burger-button-icon" src="./icons/open__burger.svg" alt="open__burger-icon" />
+        </button>
+        <button class="header__mb-close-burger-button">
+          <img class="header__mb-close-burger-button-icon" src="./icons/close__burger.svg" alt="close__burger-icon" />
+        </button>
+      </div>
+    </div>
+    <div class="header__mb-div">
+      <nav class="header__mb-nav">
+        <ul class="header__mb-list">
+          <li class="header__mb-lists">
+            <a class="header__mb-links" href="#">
+              <p class="header__mb-texts online">About</p>
+            </a>
+          </li>
+          <li class="header__mb-lists">
+            <a class="header__mb-links" href="./location.html">
+              <p class="header__mb-texts">Location</p>
+            </a>
+          </li>
+          <li class="header__mb-lists">
+            <a class="header__mb-links" href="./careers.html">
+              <p class="header__mb-texts">Careers</p>
+            </a>
+          </li>
+        </ul>
+        <button class="header__mb-button">Get Scootin</button>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="about">
+      <div class="container about__container">
+        <h2 class="about__title">About</h2>
+      </div>
+    </section>
+    <section class="era">
+      <div class="container era__container">
+        <div class="era__left-box">
+          <h2 class="era__title">Mobility for the digital era</h2>
+          <p class="era__text">
+            Getting around should be simple (and even fun!) for everyone. We
+            embrace technology to provide low cost, smart access to scooters
+            at your fingertips.
+          </p>
+        </div>
+        <img class="era__image" src="./images/girl.jpg" alt="girl" />
+      </div>
+    </section>
+    <section class="urban">
+      <div class="container urban__container">
+        <img class="urban__image" src="./images/urban.jpg" alt="urban" />
+        <div class="urban__right-box">
+          <h2 class="urban__title">Better urban living</h2>
+          <p class="urban__text">
+            We’re helping connect cities and bring people closer together. Our
+            scooters are also fully-electric and we offset the minimal carbon
+            footprint for each ride.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="values">
+      <div class="container values__container">
+        <h3 class="values__title">Our values</h3>
+        <div class="values__box">
+          <div class="values__boxes">
+            <img class="values__images" src="./images/our__tech.png" alt="Our tech" />
+            <h5 class="values__titles">Our tech</h5>
+            <p class="values__texts">
+              We’re using cutting edge technology to drive accessible urban
+              transportation forward. Our fully electric scooters are a joy to
+              ride!
+            </p>
+          </div>
+          <div class="values__boxes">
+            <img class="values__images" src="./images/our__integrity.png" alt="Our integrity" />
+            <h5 class="values__titles">Our integrity</h5>
+            <p class="values__texts">
+              We are fully committed to deliver a great yet safe, sustainable
+              micro-mobility experience in every city we serve.
+            </p>
+          </div>
+          <div class="values__boxes">
+            <img class="values__images" src="./images/our__community.png" alt="Our community" />
+            <h5 class="values__titles">Our community</h5>
+            <p class="values__texts">
+              We support every community we serve. All workers are paid a
+              living wage based on their location and are Scoot employees.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="faq">
+      <div class="container faq__container">
+        <h2 class="faq__title">FAQs</h2>
+        <div class="faq__bottom-box">
+          <div class="faq__bottom-boxes">
+            <h3 class="faq__bottom-title">How it works</h3>
+            <div class="faq__mini-bottom-box">
+              <div class="faq__mini-bottom-boxes">
+                <div class="faq__mini-bottom-top-box">
+                  <h5 class="faq__bottom-titles">
+                    How do I download the app?
+                  </h5>
+                  <img class="faq__bottom-icons" src="./icons/faq__chevron.svg" alt="chevron" />
+                </div>
+                <p class="faq__texts">
+                  To download the Scoot app, you can search “Scoot” in both
+                  the App and Google Play stores. An even simpler way to do it
+                  would be to click the relevant link at the bottom of this
+                  page and you’ll be re-directed to the correct page.
+                </p>
+              </div>
+              <div class="faq__mini-bottom-boxes">
+                <div class="faq__mini-bottom-top-box">
+                  <h5 class="faq__bottom-titles">
+                    Can I find a nearby Scoots?
+                  </h5>
+                  <img class="faq__bottom-icons" src="./icons/faq__chevron.svg" alt="chevron" />
+                </div>
+                <p class="faq__texts">
+                  To download the Scoot app, you can search “Scoot” in both
+                  the App and Google Play stores. An even simpler way to do it
+                  would be to click the relevant link at the bottom of this
+                  page and you’ll be re-directed to the correct page.
+                </p>
+              </div>
+              <div class="faq__mini-bottom-boxes">
+                <div class="faq__mini-bottom-top-box">
+                  <h5 class="faq__bottom-titles">
+                    Do I need a license to ride?
+                  </h5>
+                  <img class="faq__bottom-icons" src="./icons/faq__chevron.svg" alt="chevron" />
+                </div>
+                <p class="faq__texts">
+                  To download the Scoot app, you can search “Scoot” in both
+                  the App and Google Play stores. An even simpler way to do it
+                  would be to click the relevant link at the bottom of this
+                  page and you’ll be re-directed to the correct page.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="faq__bottom-boxes">
+            <h3 class="faq__bottom-title">Safe driving</h3>
+            <div class="faq__mini-bottom-box">
+              <div class="faq__mini-bottom-boxes">
+                <div class="faq__mini-bottom-top-box">
+                  <h5 class="faq__bottom-titles">Should I wear a helmet?</h5>
+                  <img class="faq__bottom-icons" src="./icons/faq__chevron.svg" alt="chevron" />
+                </div>
+                <p class="faq__texts">
+                  Yes, please do! All cities have different laws. But we
+                  strongly strongly strongly recommend always wearing a helmet
+                  regardless of the local laws. We like you and we want you to
+                  be as safe as possible while Scooting.
+                </p>
+              </div>
+              <div class="faq__mini-bottom-boxes">
+                <div class="faq__mini-bottom-top-box">
+                  <h5 class="faq__bottom-titles">
+                    How about the rules & regulations?
+                  </h5>
+                  <img class="faq__bottom-icons" src="./icons/faq__chevron.svg" alt="chevron" />
+                </div>
+                <p class="faq__texts">
+                  Yes, please do! All cities have different laws. But we
+                  strongly strongly strongly recommend always wearing a helmet
+                  regardless of the local laws. We like you and we want you to
+                  be as safe as possible while Scooting.
+                </p>
+              </div>
+              <div class="faq__mini-bottom-boxes">
+                <div class="faq__mini-bottom-top-box">
+                  <h5 class="faq__bottom-titles">
+                    What if I damage my Scoot?
+                  </h5>
+                  <img class="faq__bottom-icons" src="./icons/faq__chevron.svg" alt="chevron" />
+                </div>
+                <p class="faq__texts">
+                  Yes, please do! All cities have different laws. But we
+                  strongly strongly strongly recommend always wearing a helmet
+                  regardless of the local laws. We like you and we want you to
+                  be as safe as possible while Scooting.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sign">
+      <div class="container sign__container">
+        <h2 class="sign__title">Sign up and Scoot off today</h2>
+        <div class="sign__right-box">
+          <a class="sign__icon-link" href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
+            <img class="sign__icon-image" src="./icons/appstore.svg" alt="appstore" />
+          </a>
+          <a class="sign__icon-link" href="https://play.google.com/store/games?hl=en" target="_blank"
+            rel="noopener noreferrer">
+            <img class="sign__icon-image" src="./icons/googleplay.svg" alt="googleplay" />
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__left-box">
+        <a class="footer__logo-link" href="./index.html">
+          <img class="footer__logo-image" src="./icons/white__logo.svg" alt="white__logo" />
+        </a>
+        <ul class="footer__list">
+          <li class="footer__lists">
+            <a class="footer__links" href="#">
+              <p class="footer__links-texts online">About</p>
+            </a>
+          </li>
+          <li class="footer__lists">
+            <a class="footer__links" href="./location.html">
+              <p class="footer__links-texts">Location</p>
+            </a>
+          </li>
+          <li class="footer__lists">
+            <a class="footer__links" href="./careers.html">
+              <p class="footer__links-texts">Careers</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__right-icon-box">
+        <a class="footer__icon-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+          <img class="footer__icon-image" src="./icons/facebook.svg" alt="facebook" />
+        </a>
+        <a class="footer__icon-link" href="https://x.com/" target="_blank" rel="noopener noreferrer">
+          <img class="footer__icon-image" src="./icons/twitter.svg" alt="twitter" />
+        </a>
+        <a class="footer__icon-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+          <img class="footer__icon-image" src="./icons/instagram.svg" alt="instagram" />
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="./main.js"></script>
+</body>
+
+</html>
